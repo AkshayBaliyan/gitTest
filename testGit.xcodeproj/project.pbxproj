@@ -12,6 +12,7 @@
 		BAD5274321BE431100625187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD5274121BE431100625187 /* Main.storyboard */; };
 		BAD5274521BE431200625187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD5274421BE431200625187 /* Assets.xcassets */; };
 		BAD5274821BE431200625187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD5274621BE431200625187 /* LaunchScreen.storyboard */; };
+		BAD5275021BE483100625187 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5274F21BE483100625187 /* MapKitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BAD5274421BE431200625187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD5274721BE431200625187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD5274921BE431200625187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD5274F21BE483100625187 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BAD5273D21BE431100625187 /* AppDelegate.swift */,
 				BAD5273F21BE431100625187 /* ViewController.swift */,
 				BAD5274121BE431100625187 /* Main.storyboard */,
+				BAD5274F21BE483100625187 /* MapKitViewController.swift */,
 				BAD5274421BE431200625187 /* Assets.xcassets */,
 				BAD5274621BE431200625187 /* LaunchScreen.storyboard */,
 				BAD5274921BE431200625187 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD5275021BE483100625187 /* MapKitViewController.swift in Sources */,
 				BAD5274021BE431100625187 /* ViewController.swift in Sources */,
 				BAD5273E21BE431100625187 /* AppDelegate.swift in Sources */,
 			);
