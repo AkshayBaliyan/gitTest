@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SOW-hF-wVC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="796" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="dnN-hh-KVP">
             <objects>
-                <viewController id="SOW-hF-wVC" sceneMemberID="viewController">
+                <viewController id="SOW-hF-wVC" customClass="TableViewController" customModule="testGit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X4Z-cG-ax6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,18 +67,39 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="uyr-tc-QQS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="uyr-tc-QQS" customClass="TableViewCell" customModule="testGit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uyr-tc-QQS" id="coy-iW-AlV">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="did-mQ-FJR">
+                                                    <rect key="frame" x="15" y="11" width="345" height="98"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="did-mQ-FJR" firstAttribute="trailing" secondItem="coy-iW-AlV" secondAttribute="trailingMargin" id="86k-Ph-0bV"/>
+                                                <constraint firstItem="did-mQ-FJR" firstAttribute="leading" secondItem="coy-iW-AlV" secondAttribute="leadingMargin" id="Dw6-CG-NvX"/>
+                                                <constraint firstItem="did-mQ-FJR" firstAttribute="bottom" secondItem="coy-iW-AlV" secondAttribute="bottomMargin" id="UAP-M9-Klj"/>
+                                                <constraint firstItem="did-mQ-FJR" firstAttribute="top" secondItem="coy-iW-AlV" secondAttribute="topMargin" id="pTM-Ly-zpr"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblNumber" destination="did-mQ-FJR" id="gkZ-nu-Awd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="SOW-hF-wVC" id="25a-qJ-k4O"/>
+                                    <outlet property="delegate" destination="SOW-hF-wVC" id="Xic-Kg-mXo"/>
+                                </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="0.8576359160958904" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="95Y-AT-sEv" firstAttribute="top" secondItem="0E5-wL-IpE" secondAttribute="top" id="22f-9u-C9I"/>
                             <constraint firstItem="95Y-AT-sEv" firstAttribute="bottom" secondItem="0E5-wL-IpE" secondAttribute="bottom" id="sup-QB-NAT"/>
@@ -87,6 +108,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0E5-wL-IpE"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="95Y-AT-sEv" id="dv5-uv-3w6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFA-95-be9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

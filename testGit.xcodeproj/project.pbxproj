@@ -13,6 +13,8 @@
 		BAD5274521BE431200625187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD5274421BE431200625187 /* Assets.xcassets */; };
 		BAD5274821BE431200625187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD5274621BE431200625187 /* LaunchScreen.storyboard */; };
 		BAD5275021BE483100625187 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5274F21BE483100625187 /* MapKitViewController.swift */; };
+		BAD5275221BE8E1700625187 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5275121BE8E1700625187 /* TableViewController.swift */; };
+		BAD5275421BE8E9600625187 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5275321BE8E9600625187 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BAD5274721BE431200625187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD5274921BE431200625187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD5274F21BE483100625187 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		BAD5275121BE8E1700625187 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BAD5275321BE8E9600625187 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				BAD5273D21BE431100625187 /* AppDelegate.swift */,
 				BAD5273F21BE431100625187 /* ViewController.swift */,
+				BAD5275321BE8E9600625187 /* TableViewCell.swift */,
+				BAD5275121BE8E1700625187 /* TableViewController.swift */,
 				BAD5274121BE431100625187 /* Main.storyboard */,
 				BAD5274F21BE483100625187 /* MapKitViewController.swift */,
 				BAD5274421BE431200625187 /* Assets.xcassets */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD5275421BE8E9600625187 /* TableViewCell.swift in Sources */,
 				BAD5275021BE483100625187 /* MapKitViewController.swift in Sources */,
 				BAD5274021BE431100625187 /* ViewController.swift in Sources */,
 				BAD5273E21BE431100625187 /* AppDelegate.swift in Sources */,
+				BAD5275221BE8E1700625187 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
